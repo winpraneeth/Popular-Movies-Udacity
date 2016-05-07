@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.udacity.praneeth.popularmovies.MainActivityFragment"
+                tools:showIn="@layout/activity_main">
+
+    <GridView
+        android:id="@+id/movie_fragment_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="173dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:textAlignment="center"
+        android:verticalSpacing="4dp"
+        tools:context=".MainActivityFragment" >
+    </GridView>
+
+</RelativeLayout>

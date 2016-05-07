@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.udacity.praneeth.popularmovies.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_primary"
+        android:paddingBottom="4dp"
+        android:elevation="@dimen/appbar_elevation"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:title="@string/app_name"
+        />
+
+<GridView
+    android:id="@+id/movie_fragment_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="173dp"
+    android:numColumns="auto_fit"
+    android:stretchMode="spacingWidthUniform"
+    android:textAlignment="center"
+    android:verticalSpacing="4dp"
+    tools:context=".MainActivityFragment" />
+
+
+</LinearLayout>

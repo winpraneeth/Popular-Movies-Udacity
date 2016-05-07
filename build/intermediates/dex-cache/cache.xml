@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Praneeth\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_784f10fc5267857c68713d4633beb3b2c397527f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_14a85d7f9150dc165237a8c52efd738643c59176\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_eadbe0cb3f81444dd17a7b46033e73a087aaee9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_d76e30b1a3ad2f60b519f1f60466d6a9f3e99a7a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="baf4a2585697e89e580f55a9beb3dac987558a5c">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ef9e987a21967ca26c991359e0328e8b302466ca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_02068c4f0b011f426917501af1e370be45e6979c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\libs\YouTubeAndroidPlayerApi.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\2\YouTubeAndroidPlayerApi_59fba9426351a9425ed4e6811af481291752e7f8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_dc8c8fc30087728821b05f0d424b41a6492e6da1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_bf949f2af02cf84de22919e18437aab9b508ef4e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_c1bf21561092b3ebba13c4ef23008506b7cdb0e3\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_1f6dcaa4ca64e2770566b4fca5fe23f897d7a3bf\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="154c8a577b8ea573ad5584114d885aed6431356d">
+        <dex dex="C:\Users\Praneeth\Desktop\AndroidProjects\PopularMovies\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6f06268188132c11c0ad5e291efa9a30d389fb79\classes.dex" />
+    </item>
+
+</items>
