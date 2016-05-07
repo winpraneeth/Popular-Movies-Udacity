@@ -94,7 +94,7 @@ public class MainActivityFragment extends Fragment implements android.support.v4
                 if (cursor != null) {
 
                     String data[] = {posterPath, cursor.getString(COL_RELEASE_DATE).toString(), Double.toString(cursor.getDouble(COL_VOTE_AVERAGE)), cursor.getString(COL_OVERVIEW),
-                            cursor.getString(COL_ORIGINAL_TITLE), Integer.toString(cursor.getInt(COL_MOVIE_ID)), Boolean.toString(mTwoPane)};
+                            cursor.getString(COL_ORIGINAL_TITLE), Integer.toString(cursor.getInt(COL_MOVIE_ID))};
                     ((Callback) getActivity()).onItemSelected(data);
                 }
             }

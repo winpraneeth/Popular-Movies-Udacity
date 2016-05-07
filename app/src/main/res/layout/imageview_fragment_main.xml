@@ -8,6 +8,4 @@
     android:scaleType="centerCrop"
     android:adjustViewBounds="true"
     android:gravity="center_vertical"
-
-
     android:id="@+id/movie_imageview" />

@@ -94,9 +94,6 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
     private TextView mMovieOverviewView = null;
     private ListView mMovieTrailersListView = null;
     private ListView mMovieReviewsListView = null;
-
-    private TextView mTrailersEmptyView = null;
-    private TextView mReviewsEmptyView = null;
     private Button mFavoriteButton = null;
     private TextView mTrailersHeaderTextView = null;
     private TextView mReviewsHeaderTextView = null;
@@ -135,8 +132,6 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
         mMovieReviewsListView = (ListView) rootView.findViewById(R.id.listview_reviews);
         mFavoriteButton = (Button) rootView.findViewById(R.id.favorite_button);
         mMovieOverviewView = (TextView) rootView.findViewById(R.id.movie_overview);
-        // mTrailersEmptyView     = (TextView) rootView.findViewById(R.id.listview_trailers_empty);
-        //  mReviewsEmptyView      = (TextView) rootView.findViewById(R.id.listview_reviews_empty);
         mTrailersHeaderTextView = (TextView) rootView.findViewById(R.id.detail_label_trailers);
         mReviewsHeaderTextView = (TextView) rootView.findViewById(R.id.detail_label_reviews);
 
@@ -169,18 +164,6 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
 
         mMovieTrailersListView.setAdapter(mTrailerListAdapter);
         mMovieReviewsListView.setAdapter(mReviewListAdapter);
-//
-//              if(mTrailerListAdapter.getCount() <= 0) {
-//            mTrailersEmptyView.setText("No Trailers Available");
-//            mMovieTrailersListView.setEmptyView(mTrailersEmptyView);
-//        }
-
-        //        if(mReviewListAdapter.getCount() <= 0) {
-//            mReviewsEmptyView.setText("No Reviews Available");
-//            mMovieReviewsListView.setEmptyView(mReviewsEmptyView);
-//
-//        }
-
 
         mFavoriteButton.setOnClickListener(this);
         if (isMovieFavorite()) {
@@ -190,16 +173,12 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
         mMovieTrailersListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                 final Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-
                 String movieId = cursor.getString(COL_KEY);
-
                 Intent intent = YouTubeIntents.createPlayVideoIntent(
                         getActivity(), movieId);
 
                 startActivity(intent);
-
             }
         });
 
