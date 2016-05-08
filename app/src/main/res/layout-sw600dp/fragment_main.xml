@@ -1,20 +1,31 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context="com.udacity.praneeth.popularmovies.MainActivityFragment"
-                tools:showIn="@layout/activity_main">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <GridView
-        android:id="@+id/movie_fragment_grid_view"
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/movie_fragment_grid_view"
+              android:numColumns="auto_fit"
+              android:gravity="center"
+              android:columnWidth="150dp"
+              android:stretchMode="columnWidth"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+    </GridView>
+    <TextView
+        android:id="@+id/gridView_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:columnWidth="173dp"
-        android:numColumns="auto_fit"
-        android:stretchMode="spacingWidthUniform"
-        android:textAlignment="center"
-        android:verticalSpacing="4dp"
-        tools:context=".MainActivityFragment" >
-    </GridView>
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic" />
 
-</RelativeLayout>
+</LinearLayout>

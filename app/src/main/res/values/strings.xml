@@ -14,7 +14,7 @@
     <string name="label_reviews">Reviews</string>
     <dimen name="poster_width">173dp</dimen>
     <dimen name="poster_height">231dp</dimen>
-
+    <string name="label_text_view_no_movies_as_favorite">No movies being selected as Favorite by you.</string>
     <!-- SyncAdapter related -->
     <string name="sync_account_type">popularmovies.com</string>
     <string name="content_authority">com.udacity.praneeth.popularmovies</string>

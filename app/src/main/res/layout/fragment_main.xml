@@ -28,6 +28,15 @@
         android:textAlignment="center"
         android:verticalSpacing="4dp"
         tools:context=".MainActivityFragment"/>
-
+    <TextView
+        android:id="@+id/gridView_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="italic" />
 
 </LinearLayout>
