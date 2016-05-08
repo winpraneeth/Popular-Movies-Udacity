@@ -95,6 +95,9 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
     private ListView mMovieTrailersListView = null;
     private ListView mMovieReviewsListView = null;
     private Button mFavoriteButton = null;
+    private TextView mReleaseHeaderView = null;
+    private TextView mRatingHeaderView = null;
+    private TextView mOverviewHeaderView = null;
     private TextView mTrailersHeaderTextView = null;
     private TextView mReviewsHeaderTextView = null;
     private int movieId = 0;
@@ -127,11 +130,14 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
         mMovieImageView = (ImageView) rootView.findViewById(R.id.movie_poster);
         mMovieNameView = (TextView) rootView.findViewById(R.id.movie_title);
         mMovieYearView = (TextView) rootView.findViewById(R.id.release_date);
+        mReleaseHeaderView = (TextView) rootView.findViewById(R.id.text_view_release_date);
         mMovieRatingsView = (TextView) rootView.findViewById(R.id.vote_average);
+        mRatingHeaderView = (TextView) rootView.findViewById(R.id.text_view_rating);
         mMovieTrailersListView = (ListView) rootView.findViewById(R.id.listview_trailers);
         mMovieReviewsListView = (ListView) rootView.findViewById(R.id.listview_reviews);
         mFavoriteButton = (Button) rootView.findViewById(R.id.favorite_button);
         mMovieOverviewView = (TextView) rootView.findViewById(R.id.movie_overview);
+        mOverviewHeaderView = (TextView) rootView.findViewById(R.id.text_view_overview);
         mTrailersHeaderTextView = (TextView) rootView.findViewById(R.id.detail_label_trailers);
         mReviewsHeaderTextView = (TextView) rootView.findViewById(R.id.detail_label_reviews);
 
@@ -160,27 +166,30 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
             mMovieNameView.setTypeface(rosarioRegular);
             movieId = Integer.valueOf(movieIdStr);
 
-        }
+            mMovieTrailersListView.setAdapter(mTrailerListAdapter);
+            mMovieReviewsListView.setAdapter(mReviewListAdapter);
 
-        mMovieTrailersListView.setAdapter(mTrailerListAdapter);
-        mMovieReviewsListView.setAdapter(mReviewListAdapter);
-
-        mFavoriteButton.setOnClickListener(this);
-        if (isMovieFavorite()) {
-            mFavoriteButton.setText("Remove from favorite");
-        }
-
-        mMovieTrailersListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                final Cursor cursor = (Cursor) parent.getItemAtPosition(position);
-                String movieId = cursor.getString(COL_KEY);
-                Intent intent = YouTubeIntents.createPlayVideoIntent(
-                        getActivity(), movieId);
-
-                startActivity(intent);
+            mFavoriteButton.setOnClickListener(this);
+            if (isMovieFavorite()) {
+                mFavoriteButton.setText("Remove from favorite");
             }
-        });
+
+            mMovieTrailersListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    final Cursor cursor = (Cursor) parent.getItemAtPosition(position);
+                    String movieId = cursor.getString(COL_KEY);
+                    Intent intent = YouTubeIntents.createPlayVideoIntent(
+                            getActivity(), movieId);
+
+                    startActivity(intent);
+                }
+            });
+
+        } else {
+
+            rootView.setVisibility(View.INVISIBLE);
+        }
 
         return rootView;
     }
@@ -278,6 +287,9 @@ public class DetailActivityFragment extends Fragment implements LoaderManager.Lo
         mFavoriteButton.setVisibility(View.INVISIBLE);
         mTrailersHeaderTextView.setVisibility(View.INVISIBLE);
         mReviewsHeaderTextView.setVisibility(View.INVISIBLE);
+        mRatingHeaderView.setVisibility(View.INVISIBLE);
+        mOverviewHeaderView.setVisibility(View.INVISIBLE);
+        mReleaseHeaderView.setVisibility(View.INVISIBLE);
     }
 
     @Override

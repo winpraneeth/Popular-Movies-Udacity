@@ -105,8 +105,10 @@ public class MainActivity extends AppCompatActivity implements MainActivityFragm
         String sortOrder = Utility.getSortOrder(this);
 
         if (sortOrder != null && !sortOrder.equals(mSortOrder)) {
-            if (null != mFragment) {
-                mFragment.dataAfterSortSelected();
+            MainActivityFragment mf = (MainActivityFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.fragment_movie);
+            if (null != mf) {
+                mf.dataAfterSortSelected();
             } else {
                 mFragment = (MainActivityFragment) getSupportFragmentManager().findFragmentById(R.id.fragment_movie);
                 mFragment.setTwoPane(mTwoPane);
