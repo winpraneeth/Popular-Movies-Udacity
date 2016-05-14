@@ -7,6 +7,7 @@ import android.os.AsyncTask;
 import android.text.format.Time;
 import android.util.Log;
 
+import com.udacity.praneeth.popularmovies.BuildConfig;
 import com.udacity.praneeth.popularmovies.R;
 import com.udacity.praneeth.popularmovies.Utility;
 import com.udacity.praneeth.popularmovies.data.MovieContract;
@@ -71,7 +72,6 @@ public class FetchMovieTask {
         // so that they can be closed in the finally block.
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
-        String app_key = "f9bfc7b7cb017b6d26c36014074e99e7";
 
         try {
             final String MOVIES_BASE_URL = "http://api.themoviedb.org/3/movie/";
@@ -81,7 +81,7 @@ public class FetchMovieTask {
 
             Uri builtUri = Uri.parse(MOVIES_BASE_URL).buildUpon()
                     .appendPath(mSortByParamValue)
-                    .appendQueryParameter(API_KEY_PARAM, app_key)
+                    .appendQueryParameter(API_KEY_PARAM, BuildConfig.OPEN_WEATHER_MAP_API_KEY)
                     .build();
 
             URL url = new URL(builtUri.toString());
@@ -248,7 +248,6 @@ public class FetchMovieTask {
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
             int inserted = 0;
-            String app_key = "f9bfc7b7cb017b6d26c36014074e99e7";
 
             try {
                 final String MOVIES_BASE_URL = "http://api.themoviedb.org/3/movie";
@@ -260,7 +259,8 @@ public class FetchMovieTask {
                     Uri builtUri = Uri.parse(MOVIES_BASE_URL).buildUpon()
                             .appendPath(mMovieIds[i])
                             .appendPath(VIDEOS)
-                            .appendQueryParameter(API_KEY_PARAM, app_key)
+                            .appendQueryParameter(API_KEY_PARAM,
+                                    BuildConfig.OPEN_WEATHER_MAP_API_KEY)
                             .build();
 
                     URL url = new URL(builtUri.toString());
@@ -411,7 +411,6 @@ public class FetchMovieTask {
             HttpURLConnection urlConnection = null;
             BufferedReader reader = null;
             int inserted = 0;
-            String app_key = "f9bfc7b7cb017b6d26c36014074e99e7";
 
             try {
                 final String MOVIES_BASE_URL = "http://api.themoviedb.org/3/movie";
@@ -423,7 +422,7 @@ public class FetchMovieTask {
                     Uri builtUri = Uri.parse(MOVIES_BASE_URL).buildUpon()
                             .appendPath(mMovieIds[i])
                             .appendPath(REVIEWS)
-                            .appendQueryParameter(API_KEY_PARAM, app_key)
+                            .appendQueryParameter(API_KEY_PARAM, BuildConfig.OPEN_WEATHER_MAP_API_KEY)
                             .build();
 
                     URL url = new URL(builtUri.toString());
