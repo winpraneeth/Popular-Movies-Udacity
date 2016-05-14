@@ -7,9 +7,11 @@ Upon launch, present the user with a grid arrangement of movie posters and allow
 *	Mark movies as favorite and save locally.
 
 ##Screens
-![alt tag](https://github.com/winpraneeth/Popular-Movies-Udacity/tree/master/art/grid.png)
-![alt tag](https://github.com/winpraneeth/Popular-Movies-Udacity/tree/master/art/details.png)
-![alt tag](https://github.com/winpraneeth/Popular-Movies-Udacity/tree/master/art/tablet.png)
+![screen](../master/art/grid.png)
+
+![screen](../master/art/details.png)
+
+![screen](../master/art/tablet.png)
  
 ##How to Run the app
 This app uses  themoviedb.org API to retrieve movies. You need to acquire a key of your to build the app. Replace MyOpenWeatherMapApiKey in app/build.gradle with your key
