@@ -118,5 +118,4 @@ public class MainActivity extends AppCompatActivity implements MainActivityFragm
         }
     }
 
-
 }
